@@ -25,7 +25,7 @@ SECRET_KEY = 'aadaq7w#2ws@v+k+%7txs9f$6*yr@o^y(5vql!rw7(b2n9=uw5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['put.project.wawrzyniak.org']
+ALLOWED_HOSTS = ['family.wawrzyniak.org']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
 ]
 
 MIDDLEWARE = [
@@ -144,3 +145,6 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
+FACEBOOK_APP_ID=str('<1813243092137951>')
+FACEBOOK_APP_SECRET   = str('your app secret')
+
